@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.provider.OAuth2Authentication;
 @RestController
 public class OAuthController {
 	
-	@GetMapping("/")
+	@GetMapping("/welcome")
     public String welcome(Principal principal) {
         Map<String, Object> oauthDetail = (Map<String, Object>) ((OAuth2Authentication) principal)
                 .getUserAuthentication()
