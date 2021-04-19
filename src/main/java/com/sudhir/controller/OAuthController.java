@@ -17,7 +17,6 @@ public class OAuthController {
                 .getDetails();
 
         String name = (String) oauthDetail.get("name");
-
         return "Currently " + name + " Logged In!";
     }
 
